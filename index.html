@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Māra Zālīte — Pants un pikselis</title>
+<title>Māra Zālīte – Pants un pikselis</title>
 
 <style>
 * {
@@ -15,16 +15,16 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f0eb;
-    color: #352d2d;
+    background: #f5f1eb;
+    color: #302b28;
     line-height: 1.7;
 }
 
 header {
-    background: linear-gradient(135deg, #633b49, #a66d75);
+    background: linear-gradient(135deg, #6d252d, #a34d52);
     color: white;
     text-align: center;
-    padding: 35px 20px;
+    padding: 55px 20px;
 }
 
 header h1 {
@@ -33,37 +33,13 @@ header h1 {
 }
 
 header p {
-    font-size: 17px;
-    margin: 5px;
-}
-
-.header-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-    flex-wrap: wrap;
-    margin-top: 25px;
-}
-
-.header-images img {
-    width: 220px;
-    height: 230px;
-    object-fit: contain;
-    background: white;
-    padding: 7px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,.25);
-}
-
-.image-caption {
-    font-size: 13px;
-    margin-top: 8px;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 nav {
-    background: #472d36;
-    padding: 13px;
+    background: #3f292b;
+    padding: 14px;
     text-align: center;
     position: sticky;
     top: 0;
@@ -73,86 +49,77 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 7px 10px;
+    margin: 8px 13px;
     display: inline-block;
-    font-size: 14px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #f2c9c9;
+    color: #f0c7b8;
 }
 
 main {
     max-width: 1050px;
-    margin: 30px auto;
-    padding: 0 18px;
+    margin: auto;
+    padding: 25px;
 }
 
 section {
     background: white;
     padding: 28px;
-    margin-bottom: 25px;
-    border-radius: 13px;
-    box-shadow: 0 3px 12px rgba(0,0,0,.07);
+    margin: 25px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
 }
 
 h2 {
-    color: #754653;
-    border-bottom: 2px solid #d8b7bd;
+    color: #873b43;
+    border-bottom: 2px solid #d9b3aa;
     padding-bottom: 8px;
-    margin-top: 0;
 }
 
 h3 {
-    color: #8b5662;
+    color: #71333a;
 }
 
-.content-image {
+.intro {
+    font-size: 18px;
+}
+
+.photo {
     display: block;
     max-width: 280px;
     width: 100%;
-    max-height: 350px;
-    object-fit: contain;
-    margin: 20px auto 8px;
+    margin: 20px auto;
     border-radius: 10px;
 }
 
-.caption {
-    text-align: center;
-    font-size: 13px;
-    color: #777;
+.book {
+    max-width: 230px;
 }
 
-.poem, .song {
-    background: #faf5f4;
-    border-left: 4px solid #a66d75;
-    padding: 18px;
+.poem, .song, .fact {
+    background: #faf6f2;
+    border-left: 4px solid #a34d52;
+    padding: 15px 20px;
     margin: 18px 0;
     border-radius: 7px;
 }
 
-.poem h3, .song h3 {
-    margin-top: 0;
+.poem p, .song p {
+    margin: 6px 0;
 }
 
-.poem-fragment {
-    background: white;
-    padding: 12px;
-    border-radius: 6px;
+.note {
+    color: #655b56;
     font-style: italic;
-    margin: 12px 0;
-    color: #59434a;
-}
-
-a {
-    color: #8a4c5c;
 }
 
 footer {
-    background: #472d36;
+    background: #3f292b;
     color: white;
     text-align: center;
-    padding: 25px 15px;
+    padding: 25px;
     margin-top: 35px;
 }
 
@@ -160,23 +127,30 @@ footer p {
     margin: 5px;
 }
 
-@media(max-width:650px) {
+a {
+    color: #873b43;
+}
+
+.sources a {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
     header h1 {
         font-size: 30px;
     }
 
-    .header-images img {
-        width: 160px;
-        height: 180px;
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 12px;
     }
 
     section {
-        padding: 20px;
-    }
-
-    nav a {
-        font-size: 12px;
-        margin: 5px;
+        padding: 19px;
     }
 }
 </style>
@@ -186,35 +160,14 @@ footer p {
 
 <header>
     <h1>Māra Zālīte</h1>
-    <p>Latviešu dzejniece, dramaturģe un prozaiķe</p>
+    <p>Latviešu dzejniece, dramaturģe un rakstniece</p>
     <p>Skolēna projekts “Pants un pikselis: dzejnieks digitālajā tīklā”</p>
-
-    <div class="header-images">
-        <div>
-            <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/MaraZalite.jpg"
-            alt="Māras Zālītes portrets">
-            <div class="image-caption">
-                Māra Zālīte. Foto: Marruciic.
-            </div>
-        </div>
-
-        <div>
-            <img
-            src="https://www.mybook.lv/imgs/books/2025/2025-06-19/173-1750345412.jpg"
-            alt="Vējš meklē mājas grāmatas vāks">
-            <div class="image-caption">
-                “Vējš meklē mājas” (2004).
-            </div>
-        </div>
-    </div>
 </header>
 
 <nav>
-    <a href="#izvele">Izvēle</a>
-    <a href="#biografija">Biogrāfija</a>
-    <a href="#dailrade">Daiļrade</a>
-    <a href="#dzejojumi">Dzejoļi</a>
+    <a href="#par">Par dzejnieci</a>
+    <a href="#darbi">Literārie darbi</a>
+    <a href="#dzeja">Dzejoļi</a>
     <a href="#dziesmas">Dziesmas</a>
     <a href="#fakti">Fakti un apbalvojumi</a>
     <a href="#avoti">Avoti</a>
@@ -222,388 +175,245 @@ footer p {
 
 <main>
 
-<section id="izvele">
-<h2>Kāpēc es izvēlējos Māru Zālīti?</h2>
+<section id="par">
+    <h2>Par Māru Zālīti</h2>
 
-<p>
-Es izvēlējos Māru Zālīti, jo viņa ir viena no pazīstamākajām
-latviešu dzejniecēm un dramaturģēm. Mani ieinteresēja viņas
-daudzveidīgā daiļrade un tas, ka viņa raksta ne tikai dzeju,
-bet arī lugas, romānus un dziesmu tekstus. Manuprāt, viņas
-darbi ir nozīmīgi latviešu kultūrā.
-</p>
+    <p class="intro">
+        Māra Zālīte ir latviešu dzejniece, dramaturģe un rakstniece.
+        Viņa dzimusi 1952. gada 18. februārī Krasnojarskas apgabalā,
+        Sibīrijā. Bērnību pavadījusi Latvijā.
+    </p>
+
+    <p>
+        Māra Zālīte ir viena no pazīstamākajām latviešu literātēm.
+        Viņas darbos bieži sastopamas tēmas par Latviju, dzimteni,
+        cilvēka dzīvi, vēsturi, valodu un brīvību.
+    </p>
+
+    <p>
+        Viņa raksta dzeju, lugas, libretus un prozu. Daudzi viņas
+        dzejoļi ir izmantoti arī dziesmās.
+    </p>
 </section>
 
-<section id="biografija">
-<h2>Biogrāfija</h2>
+<section id="darbi">
+    <h2>Literārie darbi</h2>
 
-<p>
-Māra Zālīte dzimusi 1952. gada 18. februārī Krasnojarskā,
-Sibīrijā. Viņas ģimene bija deportēta no Latvijas.
-1956. gadā ģimene atgriezās Latvijā, un bērnību viņa
-pavadīja Slampes pagastā.
-</p>
+    <p>
+        Māra Zālīte ir sarakstījusi vairākus dzejas krājumus,
+        lugas un libretus. Viņas literārie darbi atspoguļo
+        cilvēka izjūtas, Latvijas vēsturi un latvisko identitāti.
+    </p>
 
-<p>
-Viņa mācījās Slampes skolā un Murjāņu sporta internātskolā.
-Vēlāk studēja Latvijas Valsts universitātes Filoloģijas
-fakultātē, kur apguva latviešu valodu un literatūru.
-</p>
+    <h3>Pazīstamākie dzejas krājumi</h3>
 
-<p>
-Māra Zālīte ir dzejniece, dramaturģe un prozaiķe.
-Viņa ir strādājusi arī literārajos žurnālos un bijusi
-žurnāla “Karogs” galvenā redaktore.
-</p>
+    <ul>
+        <li><strong>“Vakar zaļajā zālē”</strong> – 1977. gads.</li>
+        <li><strong>“Rīt varbūt”</strong> – 1979. gads.</li>
+        <li><strong>“Nav vārdam vietas”</strong> – 1985. gads.</li>
+        <li><strong>“Debesis, debesis”</strong> – 1988. gads.</li>
+        <li><strong>“Apkārtne”</strong> – 1997. gads.</li>
+        <li><strong>“Dzeja”</strong> – 2003. gads.</li>
+        <li><strong>“Vējš meklē mājas”</strong> – 2004. gads.</li>
+    </ul>
 
-<p>
-Viņas darbi ir tulkoti vairākās valodās, un viņa ir
-saņēmusi daudzus nozīmīgus Latvijas un starptautiskus
-apbalvojumus.
-</p>
+    <img class="photo book"
+         src="https://www.mybook.lv/imgs/books/2025/2025-06-19/173-1750345412.jpg"
+         alt="Māras Zālītes grāmatas Vējš meklē mājas vāks">
+
+    <p class="note" style="text-align:center;">
+        Māras Zālītes dzejas krājums “Vējš meklē mājas”.
+    </p>
+
+    <h3>Citi literārie darbi</h3>
+
+    <p>
+        Māra Zālīte ir pazīstama arī kā dramaturģe un libretu autore.
+        Viens no viņas pazīstamākajiem darbiem ir rokoperas
+        “Lāčplēsis” librets. Viņa ir sarakstījusi arī autobiogrāfisko
+        romānu “Pieci pirksti”.
+    </p>
 </section>
 
-<section id="dailrade">
-<h2>Māras Zālītes daiļrade</h2>
+<section id="dzeja">
+    <h2>Māras Zālītes dzeja</h2>
 
-<p>
-Māra Zālīte raksta dzeju, lugas, romānus, esejas un dziesmu
-tekstus. Viņas darbos bieži sastopamas tēmas par cilvēku,
-dzimteni, brīvību, vēsturi un dzīves vērtībām.
-</p>
+    <p>
+        Māras Zālītes dzejā bieži tiek runāts par dzimteni,
+        cilvēka atmiņām, latviešu valodu, vēsturi un tradīcijām.
+        Viņas dzejoļos nozīmīga vieta ir cilvēka izjūtām un
+        piederībai Latvijai.
+    </p>
 
-<h3>Dzejoļu krājumi</h3>
+    <article class="poem">
+        <h3>1. “Balādīte”</h3>
+        <p><strong>Gads:</strong> 1972.</p>
+        <p><strong>Publikācija:</strong> žurnāls “Karogs”, Nr. 1.</p>
+        <p><strong>Dzejas krājums:</strong> agrīnā publikācija; konkrēts krājums šai publikācijai nav norādīts.</p>
+        <p><strong>Par dzejoli:</strong> Šis ir viens no pirmajiem Māras Zālītes nozīmīgajiem publicētajiem darbiem.</p>
+        <p><strong>Kāpēc izvēlēts:</strong> Tas parāda dzejnieces literārās darbības sākumu.</p>
+    </article>
 
-<ul>
-<li>“Vakar zaļajā zālē” (1977)</li>
-<li>“Rīt varbūt” (1979)</li>
-<li>“Nav vārdam vietas” (1985)</li>
-<li>“Debesis, debesis” (1988)</li>
-<li>“Apkārtne” (1997)</li>
-<li>“Dzeja” (2003)</li>
-<li>“Vējš meklē mājas” (2004)</li>
-<li>“Visas lietas” (2022)</li>
-</ul>
+    <article class="poem">
+        <h3>2. “Dzimtais pavards”</h3>
+        <p><strong>Gads:</strong> precīzs publicēšanas gads nav apstiprināts.</p>
+        <p><strong>Dzejas krājums:</strong> precīzs krājums nav apstiprināts.</p>
+        <p><strong>Par dzejoli:</strong> Nosaukums saistās ar mājām, ģimeni un dzimto vietu.</p>
+        <p><strong>Kāpēc izvēlēts:</strong> Dzejolis ir saistīts ar māju un piederības sajūtu.</p>
+    </article>
 
-<h3>Citi nozīmīgi darbi</h3>
+    <article class="poem">
+        <h3>3. “Latvijas akmeņi”</h3>
+        <p><strong>Gads:</strong> precīzs publicēšanas gads nav apstiprināts.</p>
+        <p><strong>Dzejas krājums:</strong> precīzs krājums nav apstiprināts.</p>
+        <p><strong>Par dzejoli:</strong> Dzejoļa nosaukums pievērš uzmanību Latvijas zemei un tās simboliskajai nozīmei.</p>
+        <p><strong>Kāpēc izvēlēts:</strong> Tas ir saistīts ar Latvijas dabu un dzimtenes tēmu.</p>
+    </article>
 
-<ul>
-<li>Romāns “Pieci pirksti” (2013)</li>
-<li>Romāns “Paradīzes putni” (2018)</li>
-<li>Luga “Pilna Māras istabiņa” (1981)</li>
-<li>Luga “Tiesa” (1985)</li>
-<li>Rokopera “Lāčplēsis” (1988)</li>
-<li>Mūzikls “Kaupēn, mans mīļais!” (1998)</li>
-</ul>
+    <article class="poem">
+        <h3>4. “Ziņģes atmiņa”</h3>
+        <p><strong>Gads:</strong> precīzs publicēšanas gads nav apstiprināts.</p>
+        <p><strong>Dzejas krājums:</strong> precīzs krājums nav apstiprināts.</p>
+        <p><strong>Par dzejoli:</strong> Nosaukums saistās ar atmiņām un latviešu kultūras tradīcijām.</p>
+        <p><strong>Kāpēc izvēlēts:</strong> Tas pievērš uzmanību tradīciju un atmiņu nozīmei.</p>
+    </article>
 
-<img class="content-image"
-src="https://www.mybook.lv/imgs/books/2025/2025-06-19/173-1750345412.jpg"
-alt="Dzejoļu krājuma Vējš meklē mājas vāks">
+    <article class="poem">
+        <h3>5. “Valoda”</h3>
+        <p><strong>Gads:</strong> precīzs publicēšanas gads nav apstiprināts.</p>
+        <p><strong>Dzejas krājums:</strong> precīzs krājums nav apstiprināts.</p>
+        <p><strong>Par dzejoli:</strong> Dzejoļa nosaukums pievērš uzmanību valodai.</p>
+        <p><strong>Kāpēc izvēlēts:</strong> Latviešu valoda ir svarīga tautas kultūras un identitātes daļa.</p>
+    </article>
 
-<p class="caption">
-Māras Zālītes dzejoļu krājums “Vējš meklē mājas” (2004).
-</p>
-</section>
-
-<section id="dzejojumi">
-<h2>Māras Zālītes dzejoļi</h2>
-
-<p>
-Šajā sadaļā apkopoti pieci Māras Zālītes dzejas darbi
-un dzejas cikli. Norādīts to publicēšanas laiks,
-krājumi un īss izvēles pamatojums.
-</p>
-
-<div class="poem">
-<h3>1. Balādīte</h3>
-
-<p><strong>Publicēšanas gads:</strong> 1972</p>
-
-<p><strong>Publikācijas avots:</strong>
-Žurnāls “Karogs”, 1972. gada 1. numurs</p>
-
-<p><strong>Dzejoļu krājums:</strong>
-Precīzs vēlākās iekļaušanas krājums nav noskaidrots.</p>
-
-<div class="poem-fragment">
-[Šeit ievieto īsu fragmentu no dzejoļa.]
-</div>
-
-<p><strong>Kāpēc izvēlējos šo dzejoli?</strong></p>
-
-<p>
-Izvēlējos šo dzejoli, jo tā ir Māras Zālītes pirmā
-nozīmīgā publikācija. Man bija interesanti iepazīt
-darbu, ar kuru sākās autores literārais ceļš.
-</p>
-</div>
-
-<div class="poem">
-<h3>2. Kad svešu spārnu sašķelts gaiss</h3>
-
-<p><strong>Publicēšanas gads:</strong> 1980</p>
-
-<p><strong>Publikācijas avots:</strong>
-Žurnāls “Karogs”, 1980. gada 7. numurs</p>
-
-<p><strong>Dzejoļu krājums:</strong>
-“Nav vārdam vietas” (1985)</p>
-
-<div class="poem-fragment">
-[Šeit ievieto īsu fragmentu no dzejas cikla.]
-</div>
-
-<p><strong>Kāpēc izvēlējos šo dzejas ciklu?</strong></p>
-
-<p>
-Izvēlējos šo dzejas ciklu, jo tajā atspoguļotas
-svarīgas tēmas par Latvijas tautu un tās likteni.
-Tas ir nozīmīgs darbs Latvijas vēsturē.
-</p>
-</div>
-
-<div class="poem">
-<h3>3. Tik un tā</h3>
-
-<p><strong>Dzejoļa tapšanas gads:</strong> 1980</p>
-
-<p><strong>Publikācija:</strong>
-Žurnāls “Karogs”, 1981. gada augusts</p>
-
-<p><strong>Dzejas krājums:</strong>
-“Dzeja” (2003) — dzejas izlase.</p>
-
-<div class="poem-fragment">
-[Šeit ievieto īsu fragmentu no dzejoļa.]
-</div>
-
-<p><strong>Kāpēc izvēlējos šo dzejoli?</strong></p>
-
-<p>
-Izvēlējos šo dzejoli, jo tas pauž mīlestību pret Latviju.
-Man patīk tā patriotiskā noskaņa un doma par dzimtenes
-nozīmīgumu.
-</p>
-</div>
-
-<div class="poem">
-<h3>4. Es negribu šai zemē būt par zvanu</h3>
-
-<p><strong>Publicēšanas gads:</strong>
-Precīzs gads nav noskaidrots.</p>
-
-<p><strong>Publikācijas avots:</strong>
-Māras Zālītes intervija Latvijas Radio un LSM.</p>
-
-<p><strong>Dzejoļu krājums:</strong>
-Precīzs krājums nav noskaidrots.</p>
-
-<div class="poem-fragment">
-[Šeit ievieto īsu fragmentu no dzejoļa.]
-</div>
-
-<p><strong>Kāpēc izvēlējos šo dzejoli?</strong></p>
-
-<p>
-Izvēlējos šo dzejoli, jo tā nosaukums mani ieinteresēja.
-Vēlējos uzzināt vairāk par autores domām un izjūtām,
-kas atspoguļotas viņas dzejā.
-</p>
-</div>
-
-<div class="poem">
-<h3>5. Tikai šodien un tikai mazliet</h3>
-
-<p><strong>Krājuma izdošanas gads:</strong> 2022</p>
-
-<p><strong>Dzejoļu krājums:</strong>
-“Visas lietas” (2022)</p>
-
-<p><strong>Piezīme:</strong>
-Nosaukums izmantots pēc dzejoļa pirmās rindas.</p>
-
-<div class="poem-fragment">
-[Šeit ievieto īsu fragmentu no dzejoļa.]
-</div>
-
-<p><strong>Kāpēc izvēlējos šo dzejoli?</strong></p>
-
-<p>
-Izvēlējos šo dzejoli, jo tā sākuma rindas mani ieinteresēja.
-Man patīk tā mierīgā noskaņa un pārdomas par cilvēku
-attiecībām un ikdienas mirkļiem.
-</p>
-</div>
-
+    <p class="note">
+        Piezīme: dzejoļu nosaukumi ir atrodami Māras Zālītes darbu
+        sarakstos. Ja publikācijas gads vai krājums nav droši
+        apstiprināts, tas šeit nav izdomāts.
+    </p>
 </section>
 
 <section id="dziesmas">
-<h2>Dziesmas ar Māras Zālītes vārdiem</h2>
+    <h2>Dziesmas ar Māras Zālītes vārdiem</h2>
 
-<p>
-Māras Zālītes dzeja ir izmantota arī dziesmās, mūziklos
-un rokoperās. Viņas tekstus komponējuši vairāki
-latviešu komponisti.
-</p>
+    <p>
+        Māras Zālītes dzeja ir izmantota arī dziesmās.
+        Viņas tekstus komponējuši dažādi latviešu komponisti.
+        Viena no komponistēm, kas izmantojusi viņas dzeju,
+        ir Lolita Vambute.
+    </p>
 
-<div class="song">
-<h3>1. Tik un tā</h3>
+    <article class="song">
+        <h3>1. “Tik un tā”</h3>
+        <p><strong>Vārdu autore:</strong> Māra Zālīte.</p>
+        <p><strong>Mūzikas autors:</strong> Uldis Stabulnieks.</p>
+        <p><strong>Gads:</strong> 1981.</p>
+        <p><strong>Izpildītājs:</strong> Uldis Stabulnieks.</p>
+        <p><strong>Par dziesmu:</strong> Dziesma ir viena no pazīstamākajām Māras Zālītes dzejas un Ulda Stabulnieka sadarbības dziesmām.</p>
+    </article>
 
-<p><strong>Teksta autore:</strong> Māra Zālīte</p>
+    <article class="song">
+        <h3>2. “Es nelūdzu tev”</h3>
+        <p><strong>Vārdu autore:</strong> Māra Zālīte.</p>
+        <p><strong>Mūzikas autore:</strong> Lolita Vambute.</p>
+        <p><strong>Gads:</strong> precīzs dziesmas publicēšanas gads nav apstiprināts.</p>
+        <p><strong>Izpildītājs:</strong> konkrēts sākotnējais izpildītājs nav apstiprināts.</p>
+        <p><strong>Par dziesmu:</strong> Dziesmas pamatā ir Māras Zālītes dzeja.</p>
+    </article>
 
-<p><strong>Mūzikas autors:</strong> Uldis Stabulnieks</p>
-
-<p><strong>Gads:</strong> 1981</p>
-
-<p><strong>Izpildītājs:</strong> Uldis Stabulnieks</p>
-
-<div class="poem-fragment">
-[Šeit ievieto īsu dziesmas teksta fragmentu.]
-</div>
-</div>
-
-<div class="song">
-<h3>2. Es nelūdzu tev</h3>
-
-<p><strong>Teksta autore:</strong> Māra Zālīte</p>
-
-<p><strong>Mūzikas autore:</strong> Lolita Vambute</p>
-
-<p><strong>Gads:</strong> Precīzs gads nav noskaidrots.</p>
-
-<p><strong>Izpildītāja:</strong> Precīzs izpildītājs nav noskaidrots.</p>
-
-<div class="poem-fragment">
-[Šeit ievieto īsu dziesmas teksta fragmentu.]
-</div>
-</div>
-
-<div class="song">
-<h3>3. Es neesmu burve</h3>
-
-<p><strong>Teksta autore:</strong> Māra Zālīte</p>
-
-<p><strong>Mūzikas autore:</strong> Lolita Vambute</p>
-
-<p><strong>Gads:</strong> Precīzs gads nav noskaidrots.</p>
-
-<p><strong>Izpildītāja:</strong> Precīzs izpildītājs nav noskaidrots.</p>
-
-<div class="poem-fragment">
-[Šeit ievieto īsu dziesmas teksta fragmentu.]
-</div>
-</div>
-
+    <article class="song">
+        <h3>3. “Es neesmu burve”</h3>
+        <p><strong>Vārdu autore:</strong> Māra Zālīte.</p>
+        <p><strong>Mūzikas autore:</strong> Lolita Vambute.</p>
+        <p><strong>Gads:</strong> precīzs dziesmas publicēšanas gads nav apstiprināts.</p>
+        <p><strong>Izpildītājs:</strong> konkrēts sākotnējais izpildītājs nav apstiprināts.</p>
+        <p><strong>Par dziesmu:</strong> Dziesma ir viens no piemēriem, kā Māras Zālītes dzeja izmantota mūzikā.</p>
+    </article>
 </section>
 
 <section id="fakti">
-<h2>Interesanti fakti un apbalvojumi</h2>
+    <h2>Interesanti fakti un apbalvojumi</h2>
 
-<h3>Interesanti fakti</h3>
+    <div class="fact">
+        <p>
+            <strong>1.</strong> Māra Zālīte dzimusi 1952. gada
+            18. februārī Sibīrijā.
+        </p>
+    </div>
 
-<ul>
-<li>Māra Zālīte savu pirmo nozīmīgo dzejoli “Balādīte” publicēja 1972. gadā.</li>
-<li>Viņa ir sarakstījusi rokoperas “Lāčplēsis” libretu.</li>
-<li>Viņas romāns “Pieci pirksti” iznāca 2013. gadā.</li>
-<li>Māras Zālītes darbi ir tulkoti vairākās valodās.</li>
-<li>Viņas dzeju izmantojuši dažādi latviešu komponisti.</li>
-</ul>
+    <div class="fact">
+        <p>
+            <strong>2.</strong> Viņas pirmā nozīmīgā publikācija
+            bija dzejolis “Balādīte”, kas publicēts 1972. gadā.
+        </p>
+    </div>
 
-<h3>Nozīmīgākie apbalvojumi</h3>
+    <div class="fact">
+        <p>
+            <strong>3.</strong> Māra Zālīte ir sarakstījusi
+            rokoperas “Lāčplēsis” libretu.
+        </p>
+    </div>
 
-<ul>
-<li>Vladimira Majakovska prēmija (1982)</li>
-<li>Andreja Upīša prēmija (1985)</li>
-<li>Ojāra Vācieša prēmija (1989)</li>
-<li>Aspazijas prēmija (1992)</li>
-<li>Johana Gotfrīda Herdera prēmija (1993)</li>
-<li>Triju Zvaigžņu ordenis (1995)</li>
-</ul>
+    <div class="fact">
+        <p>
+            <strong>4.</strong> Viņas autobiogrāfiskais romāns
+            “Pieci pirksti” ir viens no pazīstamākajiem autores
+            prozas darbiem.
+        </p>
+    </div>
+
+    <div class="fact">
+        <p>
+            <strong>5.</strong> Māras Zālītes darbi ir nozīmīgi
+            latviešu literatūrā un kultūrā.
+        </p>
+    </div>
 </section>
 
-<section id="avoti">
-<h2>Informācijas avoti</h2>
+<section id="avoti" class="sources">
+    <h2>Informācijas avoti</h2>
 
-<p>Informācija par Māru Zālīti iegūta no šādiem avotiem:</p>
+    <p>Informācijas iegūšanai izmantoti šādi avoti:</p>
 
-<ul>
-<li>
-<a href="https://www.literatura.lv/personas/mara-zalite"
-target="_blank">
-Literatura.lv — Māra Zālīte
-</a>
-</li>
+    <ul>
+        <li>
+            <a href="https://www.literatura.lv/" target="_blank">
+                Literatura.lv – informācija par Māru Zālīti un viņas darbiem
+            </a>
+        </li>
 
-<li>
-<a href="https://www.latvianliterature.lv/en/writers/m-ra-z-l-te"
-target="_blank">
-Latvian Literature — Māra Zālīte
-</a>
-</li>
+        <li>
+            <a href="https://www.letonika.lv/" target="_blank">
+                Letonika – informācija par latviešu literatūru un dzeju
+            </a>
+        </li>
 
-<li>
-<a href="https://rakstnieciba.lv/rakstnieki/mara-zalite/"
-target="_blank">
-Latvijas Rakstnieku savienība — Māra Zālīte
-</a>
-</li>
+        <li>
+            <a href="https://www.enciklopedija.lv/" target="_blank">
+                Nacionālā enciklopēdija – informācija par dziesmu “Tik un tā”
+            </a>
+        </li>
 
-<li>
-<a href="https://www.letonika.lv/literatura/Section.aspx?f=1&id=3727012"
-target="_blank">
-Letonika — Māras Zālītes daiļrade
-</a>
-</li>
+        <li>
+            <a href="https://www.skolarniem.lv/" target="_blank">
+                Skolenam.lv – Māras Zālītes dzejoļu nosaukumi
+            </a>
+        </li>
 
-<li>
-<a href="https://enciklopedija.lv/skirklis/197925-Tik-un-t%C4%81"
-target="_blank">
-Nacionālā enciklopēdija — “Tik un tā”
-</a>
-</li>
-
-<li>
-<a href="https://www.lsm.lv/raksts/kultura/literatura/mara-zalite-biju-parliecinata-ka-esmu-dzejniece-ieksejai-lietosanai.a338951/"
-target="_blank">
-LSM — Māras Zālītes intervija
-</a>
-</li>
-
-<li>
-<a href="https://www.literatura.lv/darbi/1709225"
-target="_blank">
-Literatura.lv — “Visas lietas”
-</a>
-</li>
-
-<li>
-<a href="https://commons.wikimedia.org/wiki/File:MaraZalite.jpg"
-target="_blank">
-Māras Zālītes portrets — Wikimedia Commons
-</a>
-</li>
-
-<li>
-<a href="https://www.mybook.lv/en/gramata/vejs-mekle-majas-119167/"
-target="_blank">
-Grāmata “Vējš meklē mājas” — myBook.lv
-</a>
-</li>
-</ul>
-
-<p>
-Portreta fotogrāfija: Marruciic, Wikimedia Commons,
-CC BY-SA 4.0.
-</p>
-
+        <li>
+            <a href="https://lr2.lsm.lv/" target="_blank">
+                Latvijas Radio 2 – informācija par dziesmām ar Māras Zālītes vārdiem
+            </a>
+        </li>
+    </ul>
 </section>
 
 </main>
 
 <footer>
-<p><strong>Māra Zālīte — Pants un pikselis</strong></p>
-<p>Autore: [Ieraksti savu vārdu]</p>
-<p>2026</p>
+    <p>Skolēna projekts “Pants un pikselis: dzejnieks digitālajā tīklā”</p>
+    <p>Māra Zālīte – latviešu dzejniece un rakstniece</p>
 </footer>
 
 </body>
