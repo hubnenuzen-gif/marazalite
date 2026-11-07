@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="lv">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Māra Zālīte</title>
+<title>Māra Zālīte — dzejniece un dramaturģe</title>
 
 <style>
 * {
@@ -15,120 +14,171 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #fff8f5;
-    color: #382d32;
+    background: #f8eef2;
+    color: #38252e;
+    line-height: 1.7;
 }
 
 header {
-    background: linear-gradient(135deg, #842438, #c34b58);
+    background: linear-gradient(135deg, #701c3c, #b34e72);
     color: white;
     text-align: center;
-    padding: 35px 15px;
-    border-bottom: 8px solid #e9c5a7;
-}
-
-.flag {
-    width: 100px;
-    margin: auto;
-    border: 1px solid white;
-}
-
-.flag div:first-child,
-.flag div:last-child {
-    height: 27px;
-    background: #9e1b34;
-}
-
-.flag div:nth-child(2) {
-    height: 11px;
-    background: white;
+    padding: 55px 20px;
 }
 
 header h1 {
-    font-size: 40px;
-    margin-bottom: 5px;
+    font-size: 42px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 nav {
-    background: #6e1c2b;
-    padding: 15px 8px;
-    text-align: center;
     position: sticky;
     top: 0;
     z-index: 10;
+    background: #53152f;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    display: inline-block;
-    margin: 6px 9px;
-    font-size: 14px;
+    margin: 6px 12px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #ffd8b5;
+    color: #ffd4e2;
 }
 
 main {
-    max-width: 950px;
+    max-width: 1050px;
     margin: 30px auto;
-    padding: 15px;
+    padding: 0 18px;
 }
 
 section {
     background: white;
-    padding: 25px;
     margin-bottom: 25px;
-    border-radius: 14px;
-    box-shadow: 0 3px 12px #00000012;
-    border-left: 5px solid #b63c50;
+    padding: 28px;
+    border-radius: 15px;
+    box-shadow: 0 4px 14px rgba(80, 25, 48, 0.08);
 }
 
 h2 {
-    color: #9e263d;
-    border-bottom: 2px solid #f0c9a9;
-    padding-bottom: 10px;
+    color: #852b4d;
+    border-bottom: 2px solid #e9b8c9;
+    padding-bottom: 8px;
 }
 
 h3 {
-    color: #873044;
+    color: #963b5d;
 }
 
 p {
-    line-height: 1.8;
+    margin: 12px 0;
 }
 
-ul {
-    line-height: 1.9;
-}
-
-.photo {
+.portrait {
     display: block;
-    width: 250px;
+    width: 230px;
     max-width: 100%;
     border-radius: 12px;
-    margin: 20px auto;
-    box-shadow: 0 3px 12px #00000020;
+    margin: 15px auto;
 }
 
 .caption {
     text-align: center;
-    color: #777;
     font-size: 13px;
+    color: #76616a;
 }
 
-.sources a {
-    color: #9e263d;
+.collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 15px;
+}
+
+.collection {
+    background: #fff1f5;
+    border-left: 5px solid #a83e64;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.poem {
+    background: #fff5f8;
+    border-left: 5px solid #b34e72;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.poem a, .sources a {
+    color: #922d52;
+    font-weight: bold;
+}
+
+.note {
+    background: #fff0d9;
+    border-left: 5px solid #d69a45;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.book-cover {
+    width: 190px;
+    height: 270px;
+    margin: 20px auto 10px;
+    background: linear-gradient(145deg, #7b294a, #c56b89);
+    color: white;
+    border: 7px solid #f3dce5;
+    box-shadow: 4px 5px 12px #bba5ae;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.book-cover strong {
+    font-size: 21px;
+}
+
+.book-cover span {
+    margin-top: 25px;
+    font-size: 14px;
 }
 
 footer {
-    background: #8e2435;
+    background: #53152f;
     color: white;
     text-align: center;
     padding: 25px;
-    border-top: 8px solid #f0c9a9;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 5px 8px;
+    }
+
+    section {
+        padding: 20px;
+    }
 }
 </style>
 </head>
@@ -136,12 +186,6 @@ footer {
 <body>
 
 <header>
-    <div class="flag">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-
     <h1>Māra Zālīte</h1>
     <p>Latviešu dzejniece, rakstniece un dramaturģe</p>
 </header>
@@ -149,210 +193,304 @@ footer {
 <nav>
     <a href="#izvele">Mana izvēle</a>
     <a href="#biografija">Biogrāfija</a>
-    <a href="#dailrade">Daiļrade</a>
+    <a href="#dzeja">Dzeja</a>
     <a href="#darbi">Darbi</a>
+    <a href="#vizuali">Attēli</a>
     <a href="#fakti">Fakti</a>
-    <a href="#apbalvojumi">Apbalvojumi</a>
     <a href="#avoti">Avoti</a>
 </nav>
 
 <main>
 
 <section id="izvele">
-<h2>Mana izvēle</h2>
+    <h2>Kāpēc es izvēlējos Māru Zālīti?</h2>
 
-<p>
-Es izvēlējos Māru Zālīti, jo viņa ir ievērojama
-latviešu dzejniece un rakstniece. Man šķiet
-interesanti, ka viņa raksta ne tikai dzejoļus,
-bet arī lugas un grāmatas. Viņas darbos ir
-stāstīts par Latviju, cilvēkiem un brīvību.
-Es vēlos uzzināt vairāk par viņas dzīvi un
-radošo darbu.
-</p>
+    <p>
+        Es izvēlējos Māru Zālīti, jo viņa ir nozīmīga latviešu
+        dzejniece un dramaturģe. Mani ieinteresēja viņas darbi,
+        kuros tiek runāts par Latviju, cilvēkiem un dzimto valodu.
+        Viņas daiļradē var atrast daudz nozīmīgu domu un tēlu.
+        Es vēlos vairāk uzzināt par viņas dzīvi un literāro darbību.
+    </p>
 </section>
 
 <section id="biografija">
-<h2>Biogrāfija</h2>
+    <h2>Biogrāfija</h2>
 
-<img
-src="https://commons.wikimedia.org/wiki/Special:FilePath/MaraZalite.jpg"
-alt="Māra Zālīte"
-class="photo">
+    <img
+        class="portrait"
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/MaraZalite.jpg"
+        alt="Māras Zālītes portrets">
 
-<p class="caption">
-Māra Zālīte. Foto: Wikimedia Commons.
-</p>
+    <p class="caption">
+        Māra Zālīte. Attēla avots:
+        Wikimedia Commons.
+    </p>
 
-<p>
-Māra Zālīte dzimusi 1952. gada 18. februārī
-Krasnojarskā, Krievijā, izsūtīto ģimenē.
-1956. gadā viņas ģimene atgriezās Latvijā.
-Bērnību viņa pavadīja Slampes pagastā.
-</p>
+    <p>
+        Māra Zālīte dzimusi 1952. gada 18. februārī
+        Krasnojarskā, Krievijā, politiski represēto ģimenē.
+        1956. gadā viņas ģimene atgriezās Latvijā.
+        Bērnību viņa pavadīja Slampes pagasta
+        Kalna Ķivuļos. Māra Zālīte mācījās Slampes skolā,
+        pēc tam Murjāņu sporta internātskolā.
+        1975. gadā viņa absolvēja Latvijas Valsts universitātes
+        Filoloģijas fakultāti.
+    </p>
 
-<p>
-Māra Zālīte mācījās Murjāņu sporta internātskolā,
-bet vēlāk studēja latviešu filoloģiju Latvijas
-Valsts universitātē.
-</p>
+    <p>
+        Pēc studijām Māra Zālīte strādāja Latvijas Rakstnieku
+        savienībā un žurnālā "Liesma". No 1989. līdz
+        2000. gadam viņa bija žurnāla "Karogs" galvenā redaktore.
+        Viņas pirmā nozīmīgā publikācija bija dzejolis
+        "Balādīte", kas publicēts žurnālā "Karogs" 1972. gadā.
+        Māra Zālīte ir pazīstama arī kā dramaturģe un romānu autore.
+    </p>
 
-<p>
-Viņa strādāja žurnālos "Liesma" un "Karogs".
-No 1989. līdz 2000. gadam bija žurnāla
-"Karogs" galvenā redaktore.
-</p>
+    <p>
+        Māra Zālīte ir dzīva un turpina būt nozīmīga
+        Latvijas literatūras personība.
+    </p>
 </section>
 
-<section id="dailrade">
-<h2>Daiļrade</h2>
+<section id="dzeja">
+    <h2>Dzejas krājumi</h2>
 
-<p>
-Māra Zālīte ir daudzpusīga autore. Viņa raksta
-dzeju, lugas, romānus, esejas un libretus.
-Viņas darbos bieži sastopamas tēmas par Latviju,
-brīvību, cilvēka dzīvi, ģimeni un vēsturi.
-</p>
+    <p>
+        Māra Zālīte ir izdevusi vairākus dzejas krājumus.
+        Daži no viņas zināmākajiem krājumiem:
+    </p>
 
-<p>
-Viņas pirmā nozīmīgā publikācija bija dzejolis
-"Balādīte", kas publicēts 1972. gadā žurnālā
-"Karogs".
-</p>
+    <div class="collections">
 
-<p>
-1980. gados viņa pievērsās arī dramaturģijai.
-Viņas darbi ir izmantoti teātra izrādēs,
-mūziklos un rokoperās.
-</p>
+        <div class="collection">
+            <h3>Vakar zaļajā zālē</h3>
+            <p>1977. gads</p>
+        </div>
+
+        <div class="collection">
+            <h3>Rīt varbūt</h3>
+            <p>1979. gads</p>
+        </div>
+
+        <div class="collection">
+            <h3>Nav vārdam vietas</h3>
+            <p>1985. gads</p>
+        </div>
+
+        <div class="collection">
+            <h3>Debesis, debesis</h3>
+            <p>1988. gads</p>
+        </div>
+
+        <div class="collection">
+            <h3>Apkārtne</h3>
+            <p>1997. gads</p>
+        </div>
+
+        <div class="collection">
+            <h3>Vējš meklē mājas</h3>
+            <p>2004. gads</p>
+        </div>
+
+    </div>
 </section>
 
 <section id="darbi">
-<h2>Grāmatas un nozīmīgākie darbi</h2>
+    <h2>Izvēlētie dzejoļi</h2>
 
-<h3>Dzejoļu krājumi</h3>
-<ul>
-    <li>Vakar zaļajā zālē (1977)</li>
-    <li>Rīt varbūt (1979)</li>
-    <li>Nav vārdam vietas (1985)</li>
-    <li>Debesis, debesis (1988)</li>
-    <li>Apkārtne (1997)</li>
-    <li>Dzeja (2003)</li>
-    <li>Vējš meklē mājas (2004)</li>
-</ul>
+    <p>
+        Šajā sadaļā ir pieci Māras Zālītes dzejoļi.
+        To nosaukumi ir atrodami dzejnieces darbu apkopojumā.
+        Saites ved uz dzejoļu tekstiem.
+    </p>
 
-<h3>Romāni</h3>
-<ul>
-    <li>Pieci pirksti (2013)</li>
-    <li>Paradīzes putni (2018)</li>
-</ul>
+    <div class="poem">
+        <h3>1. "Dzimtais pavards"</h3>
+        <p>
+            Dzejolis saistīts ar māju un dzimtenes nozīmi
+            cilvēka dzīvē.
+        </p>
+        <p><strong>Rakstīšanas gads un krājums:</strong>
+        avotā nav norādīts.</p>
+        <a href="https://skolenam.lv/lv/darbi/literatura/latviesu-autoru-dzeja-un-dzejoli/mara-zalite"
+           target="_blank">Lasīt dzejoli</a>
+    </div>
 
-<h3>Lugas</h3>
-<ul>
-    <li>Pilna Māras istabiņa (1981)</li>
-    <li>Tiesa (1985)</li>
-    <li>Dzīvais ūdens (1988)</li>
-    <li>Eža kažociņš (1991)</li>
-    <li>Margarēta (2000)</li>
-    <li>Tobāgo! (2001)</li>
-</ul>
+    <div class="poem">
+        <h3>2. "Valoda"</h3>
+        <p>
+            Dzejolī valoda attēlota kā svarīga cilvēka
+            identitātes un domu daļa.
+        </p>
+        <p><strong>Rakstīšanas gads un krājums:</strong>
+        avotā nav norādīts.</p>
+        <a href="https://skolenam.lv/lv/darbi/literatura/latviesu-autoru-dzeja-un-dzejoli/mara-zalite"
+           target="_blank">Lasīt dzejoli</a>
+    </div>
 
-<h3>Libreti un muzikālie darbi</h3>
-<ul>
-    <li>Lāčplēsis (rokopera, 1988)</li>
-    <li>Momo (mūzikls, 1992)</li>
-    <li>Kaupēn, mans mīļais! (mūzikls, 1998)</li>
-    <li>Meža gulbji (mūzikls, 1993)</li>
-</ul>
+    <div class="poem">
+        <h3>3. "Latvijas akmeņi"</h3>
+        <p>
+            Dzejolis pievēršas cilvēka bēdām un spējai
+            tās nest sevī.
+        </p>
+        <p><strong>Rakstīšanas gads un krājums:</strong>
+        avotā nav norādīts.</p>
+        <a href="https://skolenam.lv/lv/darbi/literatura/latviesu-autoru-dzeja-un-dzejoli/mara-zalite"
+           target="_blank">Lasīt dzejoli</a>
+    </div>
+
+    <div class="poem">
+        <h3>4. "Caur gadsimtiem latvieša lūgšana"</h3>
+        <p>
+            Dzejolī izteikta vēlme saglabāt savu valodu,
+            zemi, tradīcijas un brīvību.
+        </p>
+        <p><strong>Rakstīšanas gads un krājums:</strong>
+        avotā nav norādīts.</p>
+        <a href="https://skolenam.lv/lv/darbi/literatura/latviesu-autoru-dzeja-un-dzejoli/mara-zalite"
+           target="_blank">Lasīt dzejoli</a>
+    </div>
+
+    <div class="poem">
+        <h3>5. "Balāde par parādīto godu"</h3>
+        <p>
+            Dzejolis pievēršas godam, cilvēka vērtībām
+            un attieksmei pret savu identitāti.
+        </p>
+        <p><strong>Publicēšanas gads:</strong> 1980.
+        gadā žurnālā "Karogs", 7. numurā.</p>
+        <p><strong>Dzejas krājums:</strong>
+        nav droši apstiprināts.</p>
+        <a href="https://skolenam.lv/lv/darbi/literatura/latviesu-autoru-dzeja-un-dzejoli/mara-zalite"
+           target="_blank">Lasīt dzejoli</a>
+    </div>
+
+    <h3>Kāpēc es izvēlējos šos dzejoļus?</h3>
+
+    <p>
+        Es izvēlējos šos dzejoļus, jo tajos ir svarīgas
+        tēmas par Latviju, valodu, mājām un cilvēka vērtībām.
+        Man šķiet interesanti, kā dzejniece ar vārdiem
+        izsaka savas domas un izjūtas.
+        Šie dzejoļi palīdz labāk iepazīt Māras Zālītes
+        daiļradi.
+    </p>
+
+    <div class="note">
+        Piezīme: dzejoļu pilnie teksti ir pieejami avota
+        tīmekļvietnē. Šeit ievietotas saites, nevis
+        pārpublicēti aizsargāti dzejoļu teksti.
+    </div>
 </section>
 
-<section>
-<h2>Romāns "Pieci pirksti"</h2>
+<section id="vizuali">
+    <h2>Vizuālie materiāli</h2>
 
-<p>
-"Pieci pirksti" ir Māras Zālītes autobiogrāfisks
-romāns, kas izdots 2013. gadā. Tajā stāstīts
-par meiteni Lauru un viņas ģimenes atgriešanos
-Latvijā pēc dzīves Sibīrijā. Grāmatā attēlota
-bērna pasaule, ģimene un tā laika notikumi.
-</p>
+    <h3>Dzejnieces portrets</h3>
 
-<p>
-2018. gadā tika izdots romāna turpinājums
-"Paradīzes putni".
-</p>
+    <img
+        class="portrait"
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/MaraZalite.jpg"
+        alt="Māra Zālīte">
+
+    <p class="caption">
+        Māras Zālītes portrets.
+        Avots: Wikimedia Commons.
+    </p>
+
+    <h3>Dzejas krājuma vizuālais noformējums</h3>
+
+    <div class="book-cover">
+        <strong>Vakar zaļajā zālē</strong>
+        <span>Māra Zālīte</span>
+        <span>1977</span>
+    </div>
+
+    <p class="caption">
+        Mans veidots vizuāls noformējums krājumam
+        "Vakar zaļajā zālē". Tas nav oriģinālais grāmatas vāks.
+    </p>
 </section>
 
 <section id="fakti">
-<h2>Interesanti fakti</h2>
+    <h2>Interesanti fakti</h2>
 
-<ul>
-    <li>Māra Zālīte ir dzejniece, dramaturģe un prozaiķe.</li>
-    <li>Viņas pirmā nozīmīgā publikācija bija dzejolis "Balādīte".</li>
-    <li>Viņa ir rakstījusi libretus rokoperām un mūzikliem.</li>
-    <li>Viņas romāns "Pieci pirksti" ir autobiogrāfisks.</li>
-    <li>Viņas darbi ir tulkoti citās valodās.</li>
-</ul>
+    <ul>
+        <li>
+            Māra Zālīte ir gan dzejniece, gan dramaturģe.
+        </li>
+        <li>
+            Viņas pirmā nozīmīgā publikācija bija dzejolis
+            "Balādīte" 1972. gadā.
+        </li>
+        <li>
+            No 1989. līdz 2000. gadam viņa bija žurnāla
+            "Karogs" galvenā redaktore.
+        </li>
+        <li>
+            Viņa ir sarakstījusi romānus "Pieci pirksti"
+            un "Paradīzes putni".
+        </li>
+    </ul>
 </section>
 
 <section id="apbalvojumi">
-<h2>Apbalvojumi</h2>
+    <h2>Apbalvojumi</h2>
 
-<p>
-Māra Zālīte ir saņēmusi vairākus nozīmīgus
-apbalvojumus par savu darbu literatūrā un
-kultūrā.
-</p>
-
-<ul>
-    <li>Triju Zvaigžņu ordenis (1995)</li>
-    <li>Atzinības krusts (2008)</li>
-    <li>Latvijas Literatūras gada balva par romānu "Pieci pirksti" (2013)</li>
-</ul>
+    <ul>
+        <li>Triju Zvaigžņu ordenis — 1995. gads.</li>
+        <li>Atzinības krusts — 2008. gads.</li>
+    </ul>
 </section>
 
 <section id="avoti" class="sources">
-<h2>Informācijas avoti</h2>
+    <h2>Informācijas avoti</h2>
 
-<p>
-Informācija iegūta no literatūras un kultūras
-interneta resursiem:
-</p>
+    <ul>
+        <li>
+            <a href="https://www.literatura.lv/personas/mara-zalite"
+               target="_blank">
+               Literatura.lv — Māras Zālītes biogrāfija un darbi
+            </a>
+        </li>
 
-<ul>
-    <li>
-        <a href="https://www.literatura.lv/personas/mara-zalite"
-        target="_blank">Literatura.lv – Māra Zālīte</a>
-    </li>
+        <li>
+            <a href="https://rakstnieciba.lv/rakstnieki/mara-zalite/"
+               target="_blank">
+               Latvijas Rakstnieku savienība — Māra Zālīte
+            </a>
+        </li>
 
-    <li>
-        <a href="https://rakstnieciba.lv/rakstnieki/mara-zalite/"
-        target="_blank">Latvijas Rakstnieku savienība</a>
-    </li>
+        <li>
+            <a href="https://skolenam.lv/lv/darbi/literatura/latviesu-autoru-dzeja-un-dzejoli/mara-zalite"
+               target="_blank">
+               Skolenam.lv — Māras Zālītes dzejoļi
+            </a>
+        </li>
 
-    <li>
-        <a href="https://www.lsm.lv/raksts/kultura/literatura/mara-zalite-svin-65.dzimsanas-dienu.a224380/"
-        target="_blank">Latvijas Sabiedriskais medijs</a>
-    </li>
+        <li>
+            <a href="https://www.latvianliterature.lv/en/writers/m-ra-z-l-te"
+               target="_blank">
+               Latvian Literature — bibliogrāfija
+            </a>
+        </li>
 
-    <li>
-        <a href="https://www.letonika.lv/"
-        target="_blank">Letonika.lv</a>
-    </li>
-
-    <li>
-        <a href="https://commons.wikimedia.org/wiki/Special:FilePath/MaraZalite.jpg"
-        target="_blank">Wikimedia Commons – fotogrāfija</a>
-    </li>
-</ul>
+        <li>
+            <a href="https://commons.wikimedia.org/wiki/File:MaraZalite.jpg"
+               target="_blank">
+               Wikimedia Commons — portreta attēls
+            </a>
+        </li>
+    </ul>
 </section>
 
 </main>
 
 <footer>
-    <p>Mājaslapu veidoja: [Tavs vārds]</p>
-    <p>Literatūras projekts – Māra Zālīte</p>
-    <p>2026</p>
+    <p>Māra Zālīte — latviešu literatūras personība</p>
+    <p>Skolas projekts</p>
 </footer>
 
 </body>
