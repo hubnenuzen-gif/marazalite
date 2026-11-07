@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="lv">
 <head>
@@ -103,14 +104,13 @@ h3 {
     font-weight: bold;
 }
 
-.image-placeholder {
-    background: #f4e8e8;
-    border: 2px dashed #b88b91;
+.portrait {
+    display: block;
+    width: min(100%, 350px);
+    height: auto;
+    margin: 20px auto;
     border-radius: 12px;
-    padding: 35px 15px;
-    text-align: center;
-    color: #754653;
-    margin: 15px 0;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
 }
 
 .book-cover {
@@ -154,6 +154,10 @@ a {
     color: #86515e;
 }
 
+nav a {
+    color: white;
+}
+
 @media (max-width: 650px) {
     header h1 {
         font-size: 30px;
@@ -190,6 +194,8 @@ a {
     <a href="#dzeja">Dzejoļi</a>
     <a href="#dziesmas">Dziesmas</a>
     <a href="#fakti">Fakti</a>
+    <a href="#uzstasanas">Prezentācija</a>
+    <a href="#atsauksmes">Atsauksmes</a>
     <a href="#avoti">Avoti</a>
 </nav>
 
@@ -215,12 +221,15 @@ a {
 <section id="biografija">
     <h2>Biogrāfija</h2>
 
-    <div class="image-placeholder">
-        <p><strong>Māras Zālītes portrets</strong></p>
-        <p class="placeholder">
-            (Šeit ievieto Māras Zālītes fotogrāfiju)
-        </p>
-    </div>
+    <img
+        class="portrait"
+        src="https://cdn.santa.lv/media/2019/04/6/large/a7685ac1eb44.jpg"
+        alt="Dzejnieces Māras Zālītes portrets"
+    >
+
+    <p class="image-caption">
+        Māra Zālīte. Foto: Liene Pētersone.
+    </p>
 
     <p>
         Māra Zālīte dzimusi 1952. gada 18. februārī Krasnojarskā,
@@ -286,12 +295,15 @@ a {
         <li>Rokopera “Kaupēn, mans mīļais!” (1998)</li>
     </ul>
 
+    <!-- TAVA GRĀMATAS VĀKA FOTOGRĀFIJA -->
+
     <div>
         <img
             class="book-cover"
             src="vejs-mekle-majas.png"
             alt="Māras Zālītes dzejoļu krājuma Vējš meklē mājas vāks"
         >
+
         <p class="image-caption">
             Māras Zālītes dzejoļu krājuma “Vējš meklē mājas” vāks.
         </p>
@@ -317,11 +329,13 @@ a {
         <p><strong>Dzejoļu krājums:</strong>
             (Ieraksti krājuma nosaukumu, ja izdodas to noskaidrot)
         </p>
+
         <div class="poem-lines">
             <span class="placeholder">
                 (Ievieto īsu fragmentu no dzejoļa)
             </span>
         </div>
+
         <p><strong>Kāpēc izvēlējos šo dzejoli?</strong>
             (Uzraksti, kas tev šajā dzejolī šķiet interesants)
         </p>
@@ -335,11 +349,13 @@ a {
         <p><strong>Dzejoļu krājums:</strong>
             (Ieraksti krājuma nosaukumu)
         </p>
+
         <div class="poem-lines">
             <span class="placeholder">
                 (Ievieto īsu fragmentu no dzejoļa)
             </span>
         </div>
+
         <p><strong>Kāpēc izvēlējos šo dzejoli?</strong>
             (Uzraksti savu pamatojumu)
         </p>
@@ -353,11 +369,13 @@ a {
         <p><strong>Dzejoļu krājums:</strong>
             (Ieraksti krājuma nosaukumu)
         </p>
+
         <div class="poem-lines">
             <span class="placeholder">
                 (Ievieto īsu fragmentu no dzejoļa)
             </span>
         </div>
+
         <p><strong>Kāpēc izvēlējos šo dzejoli?</strong>
             (Uzraksti savu pamatojumu)
         </p>
@@ -371,11 +389,13 @@ a {
         <p><strong>Dzejoļu krājums:</strong>
             (Ieraksti krājuma nosaukumu)
         </p>
+
         <div class="poem-lines">
             <span class="placeholder">
                 (Ievieto īsu fragmentu no dzejoļa)
             </span>
         </div>
+
         <p><strong>Kāpēc izvēlējos šo dzejoli?</strong>
             (Uzraksti savu pamatojumu)
         </p>
@@ -389,11 +409,13 @@ a {
         <p><strong>Dzejoļu krājums:</strong>
             (Ieraksti krājuma nosaukumu)
         </p>
+
         <div class="poem-lines">
             <span class="placeholder">
                 (Ievieto īsu fragmentu no dzejoļa)
             </span>
         </div>
+
         <p><strong>Kāpēc izvēlējos šo dzejoli?</strong>
             (Uzraksti savu pamatojumu)
         </p>
@@ -495,7 +517,7 @@ a {
 </section>
 
 
-<!-- UZSTĀŠANĀS -->
+<!-- PREZENTĀCIJA -->
 
 <section id="uzstasanas">
     <h2>Mana projekta prezentācija</h2>
@@ -544,22 +566,29 @@ a {
     <ul>
         <li>
             <a href="https://www.literatura.lv/personas/mara-zalite"
-               target="_blank">
+               target="_blank" rel="noopener">
                Literatura.lv — Māra Zālīte
             </a>
         </li>
 
         <li>
             <a href="https://www.latvianliterature.lv/en/writers/m-ra-z-l-te"
-               target="_blank">
+               target="_blank" rel="noopener">
                Latvian Literature — Māra Zālīte
             </a>
         </li>
 
         <li>
             <a href="https://rakstnieciba.lv/rakstnieki/mara-zalite/"
-               target="_blank">
+               target="_blank" rel="noopener">
                Latvijas Rakstnieku savienība — Māra Zālīte
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.santa.lv/raksts/personibas/dzejniece-mara-zalite-es-apzinati-dzivoju-leni-25863/"
+               target="_blank" rel="noopener">
+               Santa.lv — Māras Zālītes portrets
             </a>
         </li>
     </ul>
