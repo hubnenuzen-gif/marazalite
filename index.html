@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="lv">
 <head>
@@ -112,6 +111,22 @@ h3 {
     text-align: center;
     color: #754653;
     margin: 15px 0;
+}
+
+.book-cover {
+    display: block;
+    width: min(100%, 360px);
+    height: auto;
+    margin: 18px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+}
+
+.image-caption {
+    text-align: center;
+    font-size: 14px;
+    color: #71666a;
+    margin-top: 8px;
 }
 
 ul {
@@ -271,10 +286,14 @@ a {
         <li>Rokopera “Kaupēn, mans mīļais!” (1998)</li>
     </ul>
 
-    <div class="image-placeholder">
-        <p><strong>Grāmatas vāks</strong></p>
-        <p class="placeholder">
-            (Šeit ievieto kāda Māras Zālītes dzejoļu krājuma īsto vāka attēlu)
+    <div>
+        <img
+            class="book-cover"
+            src="vejs-mekle-majas.png"
+            alt="Māras Zālītes dzejoļu krājuma Vējš meklē mājas vāks"
+        >
+        <p class="image-caption">
+            Māras Zālītes dzejoļu krājuma “Vējš meklē mājas” vāks.
         </p>
     </div>
 </section>
